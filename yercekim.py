@@ -1,7 +1,7 @@
 
 
 import pygame
-from pygame import MOUSEMOTION, MOUSEBUTTONDOWN
+
 
 pygame.init()
 
@@ -33,7 +33,7 @@ while d:
                 drag=True
         if i.type==pygame.MOUSEBUTTONUP:
             drag=False
-        if i.type == MOUSEMOTION and drag:
+        if i.type == pygame.MOUSEMOTION and drag:
             ball_cord=list(i.pos)
 
     if drag==False and ball_cord[1]<660:
@@ -43,3 +43,5 @@ while d:
     ball = pygame.draw.circle(w, (200, 20, 200), ball_cord, 30)
     pygame.display.update()
     saat.tick(fps)
+
+pygame.quit()

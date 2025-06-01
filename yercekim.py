@@ -1,4 +1,4 @@
-from ctypes.macholib.dyld import dyld_find
+
 
 import pygame
 from pygame import MOUSEMOTION, MOUSEBUTTONDOWN
